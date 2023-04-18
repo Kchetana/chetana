@@ -8,7 +8,7 @@ import base64
 from pymongo import MongoClient
 app = Flask(__name__)
 CORS(app, origins=["http://localhost:3000"])
-model = load_model("C:\\Users\\CHETANA\\Downloads\\malaria_cnn_model.h5")
+model = load_model("malaria_cnn_model.h5")
 mongo_client = MongoClient("mongodb://hellokcr:Konepalli@ac-ts0ftlx-shard-00-00.hpocola.mongodb.net:27017,ac-ts0ftlx-shard-00-01.hpocola.mongodb.net:27017,ac-ts0ftlx-shard-00-02.hpocola.mongodb.net:27017/?ssl=true&replicaSet=atlas-zgec31-shard-0&authSource=admin&retryWrites=true&w=majority")
 
 
